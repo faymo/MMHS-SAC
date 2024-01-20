@@ -3,7 +3,7 @@ import '../styles/Event.css'
 
 function Event() {
   return (
-    <div>Event</div>
+    <div>Event Calender</div>
   )
 }
 
