@@ -9,5 +9,7 @@ module.exports = {
       'Atkinson Hyperlegible': ['Atkinson Hyperlegible']
     }   
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
