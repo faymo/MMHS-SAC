@@ -10,7 +10,7 @@ function Navbar() {
         <Link to="/SAC">Meet SAC!</Link>
         <Link to="/Event">Event Calender</Link>
         <Link to="/Clubs">Clubs</Link>
-        <Link to="/Other">Other</Link>
+        <Link to="/FAQ">FAQ</Link>
     </div>
   )
 }
