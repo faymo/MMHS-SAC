@@ -1,0 +1,10 @@
+.calender{
+    font-family: 'Inter';
+}
+
+    .calender.rbc-header{
+        background: #79b8e4;
+        color:white;
+        padding: 10px;
+        font-size: 12px;
+    }

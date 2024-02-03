@@ -5,6 +5,7 @@ import startOfWeek from "date-fns/startOfWeek";
 import React, { useState } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import '../styles/Calender.css';
 
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
@@ -28,8 +29,8 @@ const events = [
     {
         title: "Sacentine",
         allDay: true,
-        start: new Date("2024-02-14"),
-        end: new Date("2023-022-14"),
+        start: new Date(2024, 1, 14),
+        end: new Date(2024, 1, 14),
     },
 
 ];
@@ -38,8 +39,13 @@ function Calender() {
     const [allEvents] = useState(events);
 
     return (
-        <div className="Calender">
-            <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
+        <div class="calender">
+            <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={
+                { 
+                height: 700, 
+                margin: "60px",
+                 
+                }} />
         </div>
     );
 }
