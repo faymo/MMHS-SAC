@@ -23,8 +23,8 @@ const events = [
 // {
 //     title: "",
 //     allDay: true/false,
-//     start: new Date(year, month, day),
-//     end: new Date(year, month, day),
+//     start: new Date(year, month, day, hour, minute, second),
+//     end: new Date(year, month, day, hour, minute, second),
 // },
     {
         title: "Sacentine",
@@ -35,17 +35,19 @@ const events = [
 
 ];
 
+const calenderStyle = {
+    height: 700, 
+    margin: "60px",
+    fontFamily: "Inter",
+}
+
 function Calender() {
     const [allEvents] = useState(events);
+    const [style] = useState(calenderStyle);
 
     return (
         <div class="calender">
-            <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={
-                { 
-                height: 700, 
-                margin: "60px",
-                 
-                }} />
+            <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" views={["month", "agenda"]} style={style} />
         </div>
     );
 }
