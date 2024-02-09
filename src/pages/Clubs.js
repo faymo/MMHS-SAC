@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 
 function Clubs() {
   return (
-    <div class="flex w-screen h-fit flex-col max-w-full overflow-x-hidden relative bg-blue-100">
+    <div class="flex w-screen h-fit min-h-screen flex-col max-w-full overflow-x-hidden relative bg-blue-100">
       <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"></link>
       <div class="flex w-fit h-fit place-self-center mt-20 text-center text-sky-950 text-[10rem] font-thin font-['Prata']">
         clubs

@@ -7,17 +7,17 @@ function Home() {
   return (
     <div class="flex w-screen flex-col max-w-full overflow-x-hidden">
     {/* top slide of home page  */}
-        <div class="w-screen h-screen max-w-full bg-blue-100 relative flex items-center space-x-8">
-            <div className="gradient"></div>
+        <div class="w-screen h-screen bg-blue-100 relative flex items-center space-x-8">
+            <div className="gradient hidden lg:flex"></div>
 
-            <div class="flex flex-initial pl-52">
-                <img class="w-[55rem]" src={logo} alt="Milliken Logo"/>
+            <div class="flex flex-initial md:pl-24 lg:pl-52 pl-10">
+                <img class="w-[55rem] min-w-[10rem]" src={logo} alt="Milliken Logo"/>
             </div>
 
             <div class="flex flex-col shrink items-left mb-10">
-                <div class="text-left text-indigo-900 text-[7rem] font-semibold italic font-['Newsreader']">Milliken SAC</div>
-                <div class="w-5/12 pb-10 text-neutral-800 text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
-                <button class="w-[20rem] h-[4.5rem] z-10 place-content-center flex bg-stone-50 rounded-[40px] shadow-inner border border-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-stone-200">
+                <div class="text-left text-indigo-900 2xl:text[7rem] xl:text-[6rem] lg:text-[5rem] md:text-[4rem] text-[3rem] font-semibold italic font-['Newsreader']">Milliken SAC</div>
+                <div class="lg:w-5/12 w-4/6 md:flex pb-10 hidden text-neutral-800 text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
+                <button class="lg:w-[20rem] lg:h-[4.5rem] w-[15rem] h-[3rem] z-10 place-content-center flex bg-stone-50 rounded-[40px] shadow-inner border border-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-stone-200">
                     <div class="text-center text-xl place-self-center font-medium font-['Inter']">Learn More</div>
                 </button>
             </div>
