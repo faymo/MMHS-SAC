@@ -35,8 +35,8 @@ function SAC() {
           <div class="text-center place-self-center text-sky-950 text-opacity-50 text-4xl font-semibold font-['Coolvetica'] tracking-[2px]">2023 - 2024</div>
         </div>
 
-        <button type="button" class="items-center pl-5 opacity-100">
-          <svg class="hover:fill-[#051747]" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="items-center pl-5 opacity-50">
+          <svg class="" width="60" height="60" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="arrow-block-right">
             <path id="Icon" d="M43.75 25L29.1667 10.4167V18.75H7.91667C7.33328 18.75 7.04158 18.75 6.81876 18.8636C6.62276 18.9634 6.4634 19.1228 6.36353 19.3188C6.25 19.5416 6.25 19.8333 6.25 20.4167V29.5834C6.25 30.1667 6.25 30.4584 6.36353 30.6813C6.4634 30.8773 6.62276 31.0366 6.81876 31.1365C7.04158 31.25 7.33328 31.25 7.91667 31.25H29.1667V39.5834L43.75 25Z" stroke="#051747" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </g>
@@ -44,12 +44,12 @@ function SAC() {
         </button>
       </div>
 
-      <div class="flex w-screen h-[144rem] justify-center">
+      <div class="flex w-screen h-fit justify-center my-16">
         <div class="w-5/6 h-5/6 grid grid-rows-6 place-self-center bg-gradient-to-b from-[#818DAC] to-[#31384C] rounded-[40px]">
           {/* row 1 */}
           <div class="w-full flex flex-col place-content-end">
               <div class="text-center text-white text-5xl font-semibold font-['Sumana']">meet SAC!</div>
-              <div class="pt-8 pb-[5rem] text-center text-white text-base font-normal font-['Atkinson Hyperlegible']">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e<br/>t dolore magna aliqua.  </div>
+              <div class="pt-8 pb-[2.5rem] text-center text-white text-base font-normal font-['Atkinson Hyperlegible']">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore e<br/>t dolore magna aliqua.  </div>
             <div class="w-full h-[2px] z-30 flex justify-self-end border-t-0 bg-transparent bg-gradient-to-r from-transparent via-zinc-300 to-transparent bg-opacity-75" />
           </div>
           {/* row 2 */}
