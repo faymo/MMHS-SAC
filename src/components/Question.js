@@ -34,7 +34,7 @@ export default function Question({question, answer}){
             </article>
 
             <article
-            className={`${showAnswer && "p-4 lg:p-6"}`}
+            className={`${showAnswer && "transition-all duration-200 ease-in p-4 lg:p-6"}`}
             >
             {showAnswer && <p>{answer}</p>}
             </article>

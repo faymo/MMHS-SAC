@@ -7,7 +7,7 @@ function Home() {
   return (
     <div class="flex w-screen flex-col max-w-full overflow-x-hidden">
     {/* top slide of home page  */}
-        <div class="w-screen h-screen max-w-full bg-gradient-to-br from-indigo-100 via-violet-100 to-fuchsia-50 relative flex items-center space-x-8">
+        <div class="w-screen h-screen max-w-full bg-blue-100 relative flex items-center space-x-8">
             <div className="gradient"></div>
 
             <div class="flex flex-initial pl-52">
@@ -17,7 +17,7 @@ function Home() {
             <div class="flex flex-col shrink items-left mb-10">
                 <div class="text-left text-indigo-900 text-[7rem] font-semibold italic font-['Newsreader']">Milliken SAC</div>
                 <div class="w-5/12 pb-10 text-neutral-800 text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
-                <button class="w-[20rem] h-[4.5rem] place-content-center flex bg-stone-50 rounded-[40px] shadow-inner border border-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-stone-200">
+                <button class="w-[20rem] h-[4.5rem] z-10 place-content-center flex bg-stone-50 rounded-[40px] shadow-inner border border-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-stone-200">
                     <div class="text-center text-xl place-self-center font-medium font-['Inter']">Learn More</div>
                 </button>
             </div>
