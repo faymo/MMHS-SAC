@@ -7,11 +7,10 @@ export default function Question({question, answer}){
     const [showAnswer, setShowAnswer] = useState(false);
 
     return (
-        <div className="border border-gray-400 text-indigo-900 rounded-xl shadow-xl bg-indigo-200 font-['Inter'] w-5/6 place-self-center">
-            <article className="flex items-center justify-between p-4 lg:p-6">
+        <div onClick={() => setShowAnswer(!showAnswer)} className="border border-gray-400 text-indigo-900 rounded-xl shadow-xl hover:font-bold bg-indigo-200 font-['Inter'] w-5/6 place-self-center">
+            <article className="flex items-center justify-between p-4 lg:p-6 cursor-pointer">
                 <h2
                     className="cursor-pointer"
-                    onClick={() => setShowAnswer(!showAnswer)}
                 >
                     {question}
                 </h2>
@@ -19,24 +18,22 @@ export default function Question({question, answer}){
                     {!showAnswer && (
                     <li>
                         <button onClick={() => setShowAnswer(true)} class="place-self-center flex">
-                        <CiSquarePlus size="2.5rem" />
+                            <CiSquarePlus size="2.5rem" />
                         </button>
                     </li>
                     )}
                     {showAnswer && (
                     <li>
                         <button onClick={() => setShowAnswer(false)} class="place-self-center flex">
-                        <CiSquareMinus size="2.5rem"/>
+                            <CiSquareMinus size="2.5rem"/>
                         </button>
                     </li>
                     )}
                 </ul>
             </article>
 
-            <article
-            className={`${showAnswer && "transition-all duration-200 ease-in p-4 lg:p-6"}`}
-            >
-            {showAnswer && <p>{answer}</p>}
+            <article className={`${showAnswer && "transition-all duration-200 ease-in-out p-4 lg:p-6"}`}>
+                {showAnswer && <p>{answer}</p>}
             </article>
         </div>
     )

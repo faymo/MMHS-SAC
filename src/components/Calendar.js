@@ -5,7 +5,7 @@ import startOfWeek from "date-fns/startOfWeek";
 import React, { useState } from "react";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import '../styles/Calender.css';
+import '../styles/Calendar.css';
 
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
@@ -41,15 +41,15 @@ const calenderStyle = {
     fontFamily: "Inter",
 }
 
-function Calender() {
+function SACCalendar() {
     const [allEvents] = useState(events);
     const [style] = useState(calenderStyle);
 
     return (
-        <div class="calender">
+        <div class="calendar">
             <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" views={["month", "agenda"]} style={style} />
         </div>
     );
 }
 
-export default Calender;
+export default SACCalendar;

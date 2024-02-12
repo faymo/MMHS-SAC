@@ -8,7 +8,7 @@ function Navbar() {
     {name:"Home",link:"/"},
     {name:"Meet SAC!",link:"/SAC"},
     {name:"Clubs",link:"/Clubs"},
-    {name:"Event Calender",link:"/Event"},
+    {name:"Event Calendar",link:"/Event"},
     {name:"FAQ",link:"/FAQ"},
   ];
   let [open,setOpen] = useState(false);
