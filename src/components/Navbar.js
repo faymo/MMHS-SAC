@@ -6,11 +6,11 @@ import logo from '../assets/logo.png';
 
 function Navbar() {
   let Links =[
-    {name:"Home",link:"/MMHS-SAC/"},
-    {name:"Meet SAC!",link:"/MMHS-SAC/SAC"},
-    {name:"Clubs",link:"/MMHS-SAC/Clubs"},
-    {name:"Event Calendar",link:"/MMHS-SAC/Event"},
-    {name:"FAQ",link:"/MMHS-SAC/FAQ"},
+    {name:"Home",link:"/"},
+    {name:"Meet SAC!",link:"/SAC"},
+    {name:"Clubs",link:"/Clubs"},
+    {name:"Event Calendar",link:"/Event"},
+    {name:"FAQ",link:"/FAQ"},
   ];
   let [open,setOpen] = useState(false);
 
