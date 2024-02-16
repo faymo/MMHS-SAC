@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png'; 
 
 
 function Navbar() {
   let Links =[
-    {name:"Home",link:"/"},
-    {name:"Meet SAC!",link:"/SAC"},
-    {name:"Clubs",link:"/Clubs"},
-    {name:"Event Calendar",link:"/Event"},
-    {name:"FAQ",link:"/AQ"},
+    {name:"Home",link:"/MMHS-SAC/#/MMHS-SAC/"},
+    {name:"Meet SAC!",link:"/MMHS-SAC/#/MMHS-SAC/SAC"},
+    {name:"Clubs",link:"/MMHS-SAC/#/MMHS-SAC/Clubs"},
+    {name:"Event Calendar",link:"/MMHS-SAC/#/MMHS-SAC/Event"},
+    {name:"FAQ",link:"/MMHS-SAC/#/MMHS-SAC/FAQ"},
   ];
   let [open,setOpen] = useState(false);
 
@@ -46,7 +46,7 @@ function Navbar() {
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-2xl md:my-0 my-7'>
-              <Link to={link.link} className='text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200'>{link.name}</Link>
+              <a href={link.link} className='text-indigo-900 p-2 rounded-lg hover:text-blue-100 hover:bg-indigo-900 duration-200'>{link.name}</a>
             </li>
           ))
         }
