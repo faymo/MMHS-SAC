@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.07848265.css",
-    "main.js": "/static/js/main.626d43d4.js",
-    "static/js/787.2d8cc141.chunk.js": "/static/js/787.2d8cc141.chunk.js",
-    "static/media/sacbg.png": "/static/media/sacbg.3474e92d38fd602f79c7.png",
-    "static/media/logo.png": "/static/media/logo.fa3139aeed1d98030f62.png",
-    "index.html": "/index.html",
-    "main.07848265.css.map": "/static/css/main.07848265.css.map",
-    "main.626d43d4.js.map": "/static/js/main.626d43d4.js.map",
-    "787.2d8cc141.chunk.js.map": "/static/js/787.2d8cc141.chunk.js.map"
+    "main.css": "/MMHS-SAC/static/css/main.07848265.css",
+    "main.js": "/MMHS-SAC/static/js/main.33ea4da7.js",
+    "static/js/787.2d8cc141.chunk.js": "/MMHS-SAC/static/js/787.2d8cc141.chunk.js",
+    "static/media/sacbg.png": "/MMHS-SAC/static/media/sacbg.3474e92d38fd602f79c7.png",
+    "static/media/logo.png": "/MMHS-SAC/static/media/logo.fa3139aeed1d98030f62.png",
+    "index.html": "/MMHS-SAC/index.html",
+    "main.07848265.css.map": "/MMHS-SAC/static/css/main.07848265.css.map",
+    "main.33ea4da7.js.map": "/MMHS-SAC/static/js/main.33ea4da7.js.map",
+    "787.2d8cc141.chunk.js.map": "/MMHS-SAC/static/js/787.2d8cc141.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07848265.css",
-    "static/js/main.626d43d4.js"
+    "static/js/main.33ea4da7.js"
   ]
 }
