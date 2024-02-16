@@ -6,18 +6,18 @@ import logo from '../assets/logo.png';
 
 function Navbar() {
   let Links =[
-    {name:"Home",link:"/MMHS-SAC"},
-    {name:"Meet SAC!",link:"/MMHS-SAC/SAC"},
-    {name:"Clubs",link:"/MMHS-SAC/Clubs"},
-    {name:"Event Calendar",link:"/MMHS-SAC/Event"},
-    {name:"FAQ",link:"/MMHS-SAC/FAQ"},
+    {name:"Home",link:"/MMHS-SAC/#/MMHS-SAC/"},
+    {name:"Meet SAC!",link:"/MMHS-SAC/#/MMHS-SAC/SAC"},
+    {name:"Clubs",link:"/MMHS-SAC/#/MMHS-SAC/Clubs"},
+    {name:"Event Calendar",link:"/MMHS-SAC/#/MMHS-SAC/Event"},
+    {name:"FAQ",link:"/MMHS-SAC/#/MMHS-SAC/FAQ"},
   ];
   let [open,setOpen] = useState(false);
 
   let navigate = useNavigate(); 
   
   const routeChange = () =>{ 
-    navigate("/MMHS-SAC");
+    navigate("/");
   }
 
   return (
