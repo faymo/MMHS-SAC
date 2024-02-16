@@ -5,7 +5,7 @@ import Event from "./pages/Event";
 import SAC from "./pages/SAC";
 import Clubs from "./pages/Clubs";
 import FAQ from "./pages/FAQ";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
