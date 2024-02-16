@@ -7,7 +7,7 @@ export default function Question({question, answer}){
     const [showAnswer, setShowAnswer] = useState(false);
 
     return (
-        <div onClick={() => setShowAnswer(!showAnswer)} className="border border-gray-400 text-indigo-900 rounded-xl shadow-xl hover:font-bold bg-indigo-200 font-['Inter'] w-5/6 place-self-center">
+        <div onClick={() => setShowAnswer(!showAnswer)} className="border border-gray-400 select-none text-indigo-900 rounded-xl shadow-xl hover:font-bold bg-indigo-200 font-['Inter'] w-5/6 place-self-center">
             <article className="flex items-center justify-between p-4 lg:p-6 cursor-pointer">
                 <h2
                     className="cursor-pointer"
@@ -32,8 +32,8 @@ export default function Question({question, answer}){
                 </ul>
             </article>
 
-            <article className={`${showAnswer && "transition-all duration-200 ease-in-out p-4 lg:p-6"}`}>
-                {showAnswer && <p>{answer}</p>}
+            <article className={`${showAnswer && "transition-all duration-200 ease-in-out py-2 lg:py-4"}`}>
+                {showAnswer && <p class="px-4 lg:px-6">{answer}</p>}
             </article>
         </div>
     )

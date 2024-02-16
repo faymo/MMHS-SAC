@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png'; 
 
 
 function Navbar() {
@@ -22,10 +23,8 @@ function Navbar() {
   return (
     <div className='z-50 w-screen max-w-full absolute'>
       <div className='md:flex items-center justify-between text-indigo-900 bg-transparent py-4 md:px-10 px-7'>
-      <div onClick={routeChange} className='font-bold text-3xl cursor-pointer flex items-center font-[Poppins] text-indigo-900'>
-        Milliken SAC
-      </div>
-      
+      <img onClick={routeChange} src={logo} alt="Milliken Logo" class='w-[3rem] font-bold cursor-pointer flex items-center font-[Poppins] text-indigo-900'/>
+
       <ul>
         {!open && (
         <li>
@@ -43,7 +42,7 @@ function Navbar() {
         )}
       </ul>
 
-      <ul className={`md:flex md:items-center md:pb-0 absolute md:static bg-blue-100 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in-out ${open ? 'top-14 ':'top-[-490px]'}`}>
+      <ul className={`md:flex md:items-center md:pb-0 absolute md:static backdrop-blur md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-300 ease-in-out ${open ? 'top-14 ':'top-[-490px]'}`}>
         {
           Links.map((link)=>(
             <li key={link.name} className='md:ml-8 text-2xl md:my-0 my-7'>

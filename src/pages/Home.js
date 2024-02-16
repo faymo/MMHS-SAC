@@ -1,24 +1,17 @@
-import React from 'react'
-import '../styles/Home.css'
-import logo from '../assets/logo.png'; 
+import React from 'react';
+import '../styles/Home.css';
 import sacbg from '../assets/sacbg.png'; 
 
 function Home() {
   return (
     <div class="flex w-screen flex-col max-w-full overflow-x-hidden">
     {/* top slide of home page  */}
-        <div class="w-screen h-screen bg-blue-100 relative flex items-center space-x-8">
-            <div className="gradient" class="hidden lg:flex"></div>
-
-            <div class="flex flex-initial md:pl-24 lg:pl-52 pl-10">
-                <img class="w-[55rem] min-w-[10rem] sm:max-w-[20rem]" src={logo} alt="Milliken Logo"/>
-            </div>
-
-            <div class="flex flex-col shrink items-left mb-10">
-                <div class="text-left text-indigo-900 2xl:text[7rem] xl:text-[6rem] lg:text-[5rem] md:text-[4rem] hidden md:flex font-semibold italic font-['Newsreader']">Milliken SAC</div>
-                <div class="text-left text-indigo-900 2xl:text[7rem] xl:text-[6rem] md:hidden flex text-[3rem] font-semibold italic font-['Newsreader']">MMHS SAC</div>
-                <div class="lg:w-5/12 w-4/6 md:flex pb-10 hidden text-neutral-800 text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
-            </div>
+        <div class="w-screen h-screen bg-blue-100 overflow-hidden relative flex flex-col place-items-center place-content-center">
+            <div class="z-20 text-indigo-900 2xl:text[14rem] xl:text-[12rem] lg:text-[10rem] md:text-[7rem] text-[3.5rem] flex font-semibold italic font-['Newsreader']">Milliken SAC</div>
+            <div class="z-20  w-4/6 md:flex pb-10 hidden text-neutral-800 text-center text-xs md:text-sm lg:text-lg xl:text-xl font-['Inter']">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nisl et ultrices accumsan. Vivamus tincidunt eleifend sodales. Donec at libero quis nunc luctus porttitor vel quis dolor.</div>
+            <div className="gradient1"></div>
+            <div className="gradient2"></div>
+            <div className="gradient3"></div>
         </div>
 
     {/* second slide of home page */}
@@ -26,22 +19,22 @@ function Home() {
             <img class="w-screen h-screen max-w-full z-[-1] absolute" src={sacbg} alt="Background"/>
             <div class="w-screen max-w-full h-screen grid grid-cols-2 grid-rows-2 gap-x-8 gap-y-10 place-items-center z-10">
                 
-                <div class="w-[40rem] h-[20rem] flex-col translate-x-[10rem] flex justify-self-end self-end bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl">
+                <div class="w-[40rem] h-[20rem] flex-col translate-x-[10rem] flex justify-self-end self-end bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl transition ease-in-out duration-300">
                     <div class="place-self-left pl-[1.5rem] pt-9 text-purple-50 text-[1.1rem] font-normal font-['Inter']">see what events are happening in the school...</div>
                     <div class="w-[37rem] h-[14rem] mt-2 place-self-center bg-white rounded-[20px]"></div>
                 </div>
 
-                <div class="w-[20rem] h-[20rem] flex-col flex translate-x-[10rem] justify-self-start self-end bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl">
+                <div class="w-[20rem] h-[20rem] flex-col flex translate-x-[10rem] justify-self-start self-end bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl transition ease-in-out duration-300">
                     <div class="place-self-left pl-[1.5rem] pt-9 text-purple-50 text-[1.1rem] font-normal font-['Inter']"></div>
                     <div class="w-[17rem] h-[14rem] mt-[2.17rem] place-self-center bg-white rounded-[20px]"></div>
                 </div>
 
-                <div class="w-[20rem] h-[20rem] flex-col flex -translate-x-[10rem] justify-self-end self-start bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl">
+                <div class="w-[20rem] h-[20rem] flex-col flex -translate-x-[10rem] justify-self-end self-start bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl transition ease-in-out duration-300">
                     <div class="place-self-left pl-[1.5rem] pt-9 text-purple-50 text-[1.1rem] font-normal font-['Inter']">give us your feedback!</div>
                     <div class="w-[17rem] h-[14rem] mt-2 place-self-center bg-white rounded-[20px]"></div>
                 </div>
 
-                <div class="w-[40rem] h-[20rem] flex-col flex -translate-x-[10rem] justify-self-start self-start bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl">
+                <div class="w-[40rem] h-[20rem] flex-col flex -translate-x-[10rem] justify-self-start self-start bg-gradient-to-b from-slate-400 to-gray-500 rounded-[20px] shadow-xl hover:scale-105 hover:shadow-2xl transition ease-in-out duration-300">
                     <div class="place-self-left pl-[1.5rem] pt-9 text-purple-50 text-[1.1rem] font-normal font-['Inter']"></div>
                     <div class="w-[37rem] h-[14rem] mt-[2.17rem] place-self-center bg-white rounded-[20px]"></div>
                 </div>
